@@ -41,14 +41,14 @@ document.querySelector("#faster").addEventListener("click", function() {
 });
 
 document.querySelector("#skip").addEventListener("click", function() {
-	if(video.currentTime <  video.duration) {
+	if(video.currentTime + 15 <  video.duration) {
 		console.log("Skip Video")
 		console.log("Current" + video.currentTime)
 		video.currentTime += 15
 		console.log("New" +video.currentTime)
 	}
 // issue here
-	else if (video.currentTime = video.duration){
+	else {
 		video.currentTime = 0
 	}
 
